@@ -70,11 +70,25 @@
         height: 300px;
        }
         
+        #home-tiles{
+            background-color: orange;
+            height: 300px;
+            margin-left: 0;
+            margin-right: 0;
+            padding-top: 20px;
+        }
+
+        .tile{
+            background-color: cyan;
+            height: 250px;
+        }
             
         
         /*<!-- FOOTER -->*/
         #footer{
             background-color: black;
+            margin-left: 0;
+            margin-right: 0;
 
         }
         
