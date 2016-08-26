@@ -82,13 +82,23 @@
             background-color: cyan;
             height: 250px;
         }
-            
+           
+           .row{
+            margin-left: 0;
+            margin-right: 0;
+           } 
         
         /*<!-- FOOTER -->*/
         #footer{
-            background-color: black;
+            background-color: gray;
+            color: #f2f2f2;
             margin-left: 0;
             margin-right: 0;
+
+        }
+
+        #footer li a {
+            color: #f2f2f2;
 
         }
         
