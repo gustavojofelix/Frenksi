@@ -1,167 +1,121 @@
 /*<!-- HEADER -->*/
-        #header{
-            background-color: red;
-        }
-           /* <!-- BANNER --> */
-           #banner{
 
-            background-color: gray;
-            padding-top: 16px;
-            padding-bottom: 0;
+.ad-pull-right {
+    float: right;
+}
 
-           }
 
-           .ad-pull-right{
-            float: right;
-           }
+/* <!-- MAIN NAVIGATION-->*/
+#main-navigation {
+    border-radius: 0;
+    border: 0;
+}
 
-           
-            
-           /* <!-- MAIN NAVIGATION-->*/
-           #main-navigation{
+#main-navigation  li a:hover {
+   /* background-color: #555;*/
+   color:#006600;
+}
 
-           }
 
-/*Remove the padding and margin from the list, and background color*/
-           ul.topnav{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-            overflow: hidden;;
-            background-color: #333;
-           }
 
-/*Float the list items side by side*/
-            ul.topnav li{
-                float: left;
-            }   
+#carousel {
+    background-color: yellow;
+    /*height: 300px;*/
+}
 
-            /*Style the links inside the list items*/ 
-            ul.topnav li a{
-                display: inline-block;
-                color: #f2f2f2;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-                transition: 0.3s;
-                font-size: 17px;
-            } 
+.carousel-inner>.item>img,
+.carousel-inner>.item>a>img {
+   /* width: 90%;*/
+    height: 250px;
+    margin: auto;
+}
 
-            /*Change background color of links on hover*/
-            ul.topnav li a:hover{
-                background-color: #555;
-            } 
+#home-tiles {
+    /*background-color: orange;*/
+    height: 300px;
+    
+    padding-top: 20px;
+}
 
-            /*Hide the icon that should open and close the topnav on small screen*/
-            ul.topnav li.icon{
-                display: none;
-            }     
-            
-            
-        
-       /* <!-- MAIN -->*/
-       #main{
-        background-color: blue;
+.tile {
+    /*background-color: cyan;*/
+    height: 250px;
+}
 
-       }
+#map {
+        height: 100%;
+      }
 
-       #carousel{
-        background-color: yellow;
-        height: 300px;
-       }
-        
-        #home-tiles{
-            background-color: orange;
-            height: 300px;
-            margin-left: 0;
-            margin-right: 0;
-            padding-top: 20px;
-        }
+      /*Menu Tile*/
+      #menu-tile1, #menu-tile2, #menu-tile3{
+		height: 250px;
+		width: 100%;
+		margin-bottom: 15px;
+		position: relative;
+		border: 2px solid #3F0C1F;
+		overflow: hidden;
+	}
 
-        .tile{
-            background-color: cyan;
-            height: 250px;
-        }
-           
-           .row{
-            margin-left: 0;
-            margin-right: 0;
-           } 
-        
-        /*<!-- FOOTER -->*/
-        #footer{
-            background-color: gray;
-            color: #f2f2f2;
-            margin-left: 0;
-            margin-right: 0;
+	#menu-tile1:hover, #menu-tile2:hover, #menu-tile3:hover{
+		box-shadow: 0 2px 10px 2px #006600;
+      
+	}
 
-        }
+    #menu-tile1{
+		background: url("../imgs/hosting.png") no-repeat;
+		background-position: center;
+	}
 
-        #footer li a {
-            color: #f2f2f2;
+    #menu-tile2{
+		background: url("../imgs/Mobile-development.png") no-repeat;
+		background-position: center;
+	}
 
-        }
+    #menu-tile3{
+		background: url("../imgs/software-development.jpg") no-repeat;
+		background-position: center;
+	}
 
-        ul.nav-footer-link-list li{
-            display: inline-block;
-            border-right: solid 2px black;
-            padding: 0 16px;
+    #menu-tile1 span, #menu-tile2 span, #menu-tile3 span{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		text-align: center;
+		font-size: 1.2em;
+		text-transform: uppercase;
+		background-color: #000;
+		color: #fff;
+		opacity: .8;
+	}
 
-        }
 
-        #legal-copyright{
-            padding: 0 16px;
-        }
 
-        ul.nav-footer-link-list li a{
-            background-color: red;
-        }
 
-        ul.nav-footer-link-list-support li a{
-            /*background-color: red;*/
-            width: 50%;
-        }
+/*<!-- FOOTER -->*/
 
-        .nav-footer-link-list-support {
-            /*background-color: red;*/
-            width: 40%;
+#footer {
+    background-color: gray;
+    color: #f2f2f2;
+    
+}
 
-        }
-        
+#footer li a {
+    color: #f2f2f2;
+}
 
-        /*MEDIA QUERIES*/
+ul.nav-footer-link-list li {
+    display: inline-block;
+    border-right: solid 2px black;
+    padding: 0 16px;
+}
 
-        /*When the screen is less than 680 pixel wide, hide all list items, except for teh first one("Home"). Show the list item
-        that contains the link to open and close topnav (li.icon)*/
-        @media screen and (max-width: 680px){
-            ul.topnav li:not(:first-child){
-                display: none;
-            }
+#legal-copyright {
+    padding: 0 16px;
+}
 
-            ul.topnav li.icon{
-                float: right;
-                display: inline-block;
-            } 
 
-        }
 
-        /*The 'responsive' class is added to the topnav using javascript when the user clicks on the icon. This clas make the topnav
-        look good on small screen.*/
-        @media screen and (max-width: 680px){
-            ul.topnav.responsive{
-                position: relative;
-            }
-            ul.topnav.responsive li.icon{
-                position: absolute;
-                right: 0;
-                top: 0;
-            }
-            ul.topnav.responsive li{
-                float: none;
-                display: inline;
-            }
-            ul.topnav.responsive li a{
-                display: block;
-                text-align: left;
-            }
-        }
+/*MEDIA QUERIES*/
+
+
